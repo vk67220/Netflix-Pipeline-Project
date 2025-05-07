@@ -27,17 +27,16 @@
 
 	</dependencies>
 	
-	<distributionManagement>
-		 <snapshotRepository>
-		    <id>nexusRepo</id>
-		    <url>http://74.225.184.133:8081/repository/maven-releases/</url>
-		 </snapshotRepository>
-		
-		<repository>
-		    <id>nexusRepo</id>
-		    <url>http://74.225.184.133:8081/repository/maven-snapshots/</url>
-		</repository>
-  	</distributionManagement>
+<distributionManagement>
+        <repository>
+           <id>maven-release</id>
+           <url>http://74.225.184.133:8081/repository/maven-releases/</url>      
+           </repository>
+        <snapshotRepository>
+           <id>maven-snapshots</id>
+           <url>http://74.225.184.133:8081/repository/maven-snapshots/</url>    
+        </snapshotRepository>
+</distributionManagement>
 	
 	<pluginRepositories>
 	    <pluginRepository>    
