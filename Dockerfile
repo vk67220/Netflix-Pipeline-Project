@@ -8,7 +8,7 @@ MAINTAINER "Kastro Kiran V"
 WORKDIR /usr/local/tomcat/webapps/
 
 # Copy WAR file to Tomcat webapps directory
-COPY target/NETFLIX-1.2.2.war /usr/local/tomcat/webapps/NETFLIX-1.2.2.war
+COPY target/NETFLIX-1.2.3.war /usr/local/tomcat/webapps/NETFLIX-1.2.3.war
 
 # Change Tomcat default port from 8080 to 9090
 RUN sed -i 's/port="8080"/port="9090"/g' /usr/local/tomcat/conf/server.xml
